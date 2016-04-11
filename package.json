@@ -1,15 +1,16 @@
 {
-  "name": "histograph-db-neo4j",
+  "name": "spacetime-db-neo4j",
   "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "standard"
   },
-  "author": "",
+  "author": "Bert Spaan",
   "license": "MIT",
   "dependencies": {
-    "histograph-config": "nypl-spacetime/histograph-config",
+    "async": "^1.5.2",
+    "spacetime-config": "nypl-spacetime/spacetime-config",
     "neo4j": "^2.0.0-RC2"
   },
   "devDependencies": {

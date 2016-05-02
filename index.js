@@ -6,6 +6,10 @@ var db = new neo4j.GraphDatabase(`http://${config.neo4j.host}:${config.neo4j.por
 var async = require('async')
 
 function executeQuery (query, params, callback) {
+  if (callback === undefined && typeof(params) === 'function') {
+    callback = params
+  }
+
   db.cypher({
     query: query,
     params: params
